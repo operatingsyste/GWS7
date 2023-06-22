@@ -10,12 +10,19 @@ function checkForUpdates(){
   document.getElementById('h1').innerHTML = 'Checking...';
   setTimeout(function(){
     document.getElementById('h1').innerHTML = ' ';
-    alert('OS already has latest version');
+    var config = confirm('Update is available update name GWS 8');
+    if (config){
+      document.getElementById("h1").innerHTML = '<a href="https://operatingsyste.github.io/GWS8SETUP/upd.html" id="updCl"> Validating update packages </a>';
+      document.getElementById("updCl").click();
+    }
+    else {
+      alert("Update request cancled by you");
+    }
   }, 2000);
 }
 
 function bios(){
-  window.open('https://biosgws.operatingsyste.repl.co'); 
+  window.open('https://operatingsyste.github.io/BIOSGWS/'); 
 }
 
 function Sboot(){
