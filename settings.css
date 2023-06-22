@@ -1,0 +1,37 @@
+div:hover{
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+div{
+  padding: 20px;
+  font-size: 20px;
+}
+body{
+  user-select: none;
+  font-family: arial;
+  background-color: silver;
+}
+button{
+  font-size: 20px;
+  background-color: transparent;
+  border: 0px;
+}
+button:hover{
+  background-color: grey;
+}
+.btn-01{
+  background-color: dodgerblue;
+  color: white;
+  border: 5px solid dodgerblue;
+  border-radius: 100px;
+  height: 40px;
+  width: 300px;
+}
+.btn-01:hover{
+  background-color: blue;
+  border-color: blue;
+  outline: 3px solid orange;
+}
